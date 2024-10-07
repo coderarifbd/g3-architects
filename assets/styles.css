@@ -11,6 +11,11 @@ html {
   font-size: 62.5%;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 header {
   background: #fff4e9;
   padding: 25px;
@@ -21,8 +26,6 @@ header {
 
 header nav {
   display: flex;
-  max-width: 1440px;
-  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
 }
@@ -64,7 +67,7 @@ header > nav > .menu {
   text-align: center;
   margin: 25px 0;
 }
-.primary {
+.btn-primary {
   background: #fc9128;
   font-size: 2rem;
   padding: 20px 25px;
@@ -85,9 +88,9 @@ header > nav > .menu {
   width: 100%;
 }
 
-/* responsive design */
+/* responsive style */
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 576px) {
   nav {
     flex-direction: column;
   }
@@ -101,7 +104,17 @@ header > nav > .menu {
   .banner-title {
     font-size: 3.8rem;
   }
-  .primary {
+  .btn-primary {
     padding: 13px 30px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .banner-title {
+    font-size: 5rem;
   }
 }
