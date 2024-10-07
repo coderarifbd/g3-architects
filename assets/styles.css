@@ -3,8 +3,105 @@
 
 * {
   font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header{
+html {
+  font-size: 62.5%;
+}
+
+header {
   background: #fff4e9;
+  padding: 25px;
+}
+.header-title {
+  font-size: 4.6rem;
+}
+
+header nav {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > nav > .menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+/* banner style */
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+.banner-content {
+  width: 850px;
+  margin: 0 auto;
+  padding: 100px 0 40px 0;
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 6.4rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.banner-description {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 25px 0;
+}
+.primary {
+  background: #fc9128;
+  font-size: 2rem;
+  padding: 20px 25px;
+  border-radius: 8px;
+  color: #fff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 0;
+}
+
+.banner-image {
+  margin: 0 auto;
+}
+
+.banner-image img {
+  width: 100%;
+}
+
+/* responsive design */
+
+@media only screen and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+  }
+  .header-title {
+    font-size: 3.6rem;
+  }
+  .banner-content {
+    max-width: 100%;
+    padding: 40px 0;
+  }
+  .banner-title {
+    font-size: 3.8rem;
+  }
+  .primary {
+    padding: 13px 30px;
+  }
 }
