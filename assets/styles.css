@@ -24,13 +24,13 @@ header {
   font-size: 4.6rem;
 }
 
-header nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-header > nav > .menu {
+.nav > .menu {
   display: flex;
 }
 
@@ -212,6 +212,91 @@ header > nav > .menu {
 }
 
 /* Facts Sections */
+.facts,
+.sponspors {
+  padding: 60px 0;
+}
+
+.facts-content,
+.sponspors-content {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.facts-description,
+.sponspors-description {
+  font-size: 1.8rem;
+  color: #727272;
+  margin: 20px 0;
+}
+
+.facts-heading,
+.sponspors-heading {
+  font-size: 4.6rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+.facts-boxs {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fact-box {
+  padding: 25px 40px;
+  border: 1px solid #fc9128;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+}
+
+.facts-number {
+  font-size: 4.6rem;
+  color: #424242;
+  font-weight: 700;
+}
+
+.fact-box-description {
+  font-size: 1.8rem;
+  color: #727272;
+  font-weight: 500;
+}
+
+.sponspors-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.sponspors-img img {
+  width: auto;
+}
+
+footer {
+  padding: 25px 15px;
+  background-color: #fff4e8;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+footer p {
+  font-size: 1.8rem;
+  color: #727272;
+}
 
 /* responsive style */
 
@@ -221,6 +306,10 @@ header > nav > .menu {
   }
   .header-title {
     font-size: 3.6rem;
+  }
+
+  .menu li {
+    padding: 10px;
   }
   .banner-content {
     max-width: 100%;
@@ -279,6 +368,24 @@ header > nav > .menu {
 
   .experience-heading {
     font-size: 4.6rem;
+  }
+
+  .facts,
+  .sponspors {
+    padding: 50px 25px;
+  }
+
+  .facts-content,
+  .sponspors-content {
+    width: 100%;
+  }
+
+  .facts-boxs {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sponspors-img {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
